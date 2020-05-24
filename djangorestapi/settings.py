@@ -25,7 +25,7 @@ SECRET_KEY = '&j#n0#*#lack*5(a%loa$zo765^5c^8pkr$fr$il&u7o_lrocb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -56,10 +56,10 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000"
-]
+# CORS_ORIGIN_WHITELIST = [
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000"
+# ]
 SESSION_COOKIE_DOMAIN = 'http://127.0.0.1'
 CSRF_COOKIE_DOMAIN = 'http://127.0.0.1'
 
